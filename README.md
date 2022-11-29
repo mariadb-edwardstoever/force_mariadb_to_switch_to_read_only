@@ -9,9 +9,10 @@ Version 1.1 - July 22, 2022 - roles look like users. Exclude roles from this pro
 ---
 **Scenario:** You want to use Maxscale to switchover primary and replica for maintenance,
 however maxscale fails with an error:
-```      [mariadbmon] Failed to enable read_only on server2:
-      Query SET STATEMENT max_statement_time=10 FOR SET GLOBAL read_only=1;
-      failed on server2: Query execution was interrupted (max_statement_time exceeded) (1969).
+```
+[mariadbmon] Failed to enable read_only on server2:
+Query SET STATEMENT max_statement_time=10 FOR SET GLOBAL read_only=1;
+failed on server2: Query execution was interrupted (max_statement_time exceeded) (1969).
 ```
 
 This occurs either because the database is very active with many simultaneous transactions
