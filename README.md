@@ -2,9 +2,10 @@
 Database tool to allow you to switch MariaDB to read_only even when there are locks on objects that prevent it.
 The schema switch_to_read_only is created by Edward Stoever for MariaDB Support.
 MariaDB Corporation is not responsible for your use of this code.
+```
 Version 1.0 - July 21, 2022
 Version 1.1 - July 22, 2022 - roles look like users. Exclude roles from this process.
-
+```
 ---
 **Scenario:** You want to use Maxscale to switchover primary and replica for maintenance,
 however maxscale fails with an error:
